@@ -641,14 +641,14 @@ if __name__ == "__main__":
         ]
         for i in range(len(games)):
             print(f"{i}. {games[i]}")
-        #choice = input("Enter a number to choose the game: ")
-        #valid_inputs = [str(i) for i in range(len(games))]
-        #while choice not in valid_inputs:
-            #choice = input("Invalid input, enter a number listed above: ")
+        choice = input("Enter a number to choose the game: ")
+        valid_inputs = [str(i) for i in range(len(games))]
+        while choice not in valid_inputs:
+            choice = input("Invalid input, enter a number listed above: ")
 
         # Initialize MuZero
-        #choice = int(choice)
-        choice = int(9)
+        choice = int(choice)
+        #choice = int(9)
         print(choice)
         game_name = games[choice]
         muzero = MuZero(game_name)
@@ -669,13 +669,13 @@ if __name__ == "__main__":
             for i in range(len(options)):
                 print(f"{i}. {options[i]}")
 
-            #choice = input("Enter a number to choose an action: ")
-            #valid_inputs = [str(i) for i in range(len(options))]
-            #while choice not in valid_inputs:
-                #choice = input("Invalid input, enter a number listed above: ")
+            choice = input("Enter a number to choose an action: ")
+            valid_inputs = [str(i) for i in range(len(options))]
+            while choice not in valid_inputs:
+                choice = input("Invalid input, enter a number listed above: ")
                 
-            #choice = int(choice)
-            choice = int(0)
+            choice = int(choice)
+            #choice = int(0)
 
             print(choice)
             if choice == 0:
